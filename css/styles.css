@@ -1,0 +1,179 @@
+:root {
+    --accent-color: #ff6c00;
+    --header-text-color: #ffffff;
+    --pre-title-color: #c4c8d7;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+.list {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.btn {
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.btn:hover,
+.btn:focus {
+    background-color: var(--accent-color);
+    color: #ffffff;
+}
+
+.section-suptext {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.section-subtext {
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+}
+
+.section-title {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.17;
+    letter-spacing: 0.05em;
+}
+
+.section-text {
+    font-size: 14px;
+    line-height: 1.86;
+
+    letter-spacing: 0.02em;
+}
+
+/* ----------------------------HEADER -------------------------------*/
+
+.header {
+    background-color: gray;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.1em;
+}
+
+.menu-link {
+    color: var(--header-text-color);
+}
+.menu-link:hover,
+.menu-link:focus {
+    color: var(--accent-color);
+}
+
+.header-phone {
+    color: var(--header-text-color);
+}
+
+.header-btn {
+    color: var(--header-text-color);
+}
+
+/* ----------------------------HERO -------------------------------*/
+
+.hero {
+    background-color: gray;
+}
+
+.hero-link {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.2em;
+    color: #303030;
+}
+
+.hero-link:hover,
+.hero-link:focus {
+    color: var(--accent-color);
+}
+
+.hero-suptext {
+    color: var(--pre-title-color);
+}
+
+.hero-title {
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 1.18;
+    letter-spacing: 0.05em;
+    color: #ffffff;
+}
+
+.hero-subtext {
+    color: #9da4bd;
+}
+
+/* ----------------------------ABOUT -------------------------------*/
+
+.about-title {
+    color: #303030;
+}
+
+.about-suptext {
+    color: #303030;
+}
+
+.about-subtext {
+    color: #555555;
+}
+
+.about-text {
+    color: #555555;
+}
+
+.about-btn {
+    color: #303030;
+}
+
+/* ----------------------------PRICES -------------------------------*/
+.prices {
+    background-color: gray;
+}
+.prices-suptext {
+    color: var(--pre-title-color);
+}
+
+.prices-title {
+    color: #ffffff;
+}
+
+.prices-item-text {
+    font-size: 18px;
+    line-height: 1.67;
+
+    letter-spacing: 0.02em;
+
+    color: #9da4bd;
+}
+
+.prices-btn {
+    color: #ffffff;
+}

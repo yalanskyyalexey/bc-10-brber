@@ -5,45 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Barber</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <a href=""><img src="./images/logo.svg" alt="лаготип"></a>
-            <ul>
-                <li>
-                    <a href="">О нас</a>
+    <header class="header">
+        <nav class="navigation">
+            <a href="" class="logo"><img src="./images/logo.svg" alt="лаготип"></a>
+            <ul class="menu-list">
+                <li class="menu-item">
+                    <a class="menu-link" href="">О нас</a>
                 </li>
-                <li>
-                    <a href="">Услуги и цены</a>
+                <li class="menu-item">
+                    <a class="menu-link" href="">Услуги и цены</a>
                 </li>
-                <li>
-                    <a href="">Мастера</a>
+                <li class="menu-item">
+                    <a class="menu-link" href="">Мастера</a>
                 </li>
-                <li>
-                    <a href="">Контакты</a>
+                <li class="menu-item">
+                    <a class="menu-link" href="">Контакты</a>
                 </li>
             </ul>
-            
         </nav>
-        <a href="tel:+380441111111">+38 044 111 11 11</a>
-        <button type="button">онлайн-запись</button>
+        <a class="header-phone" href="tel:+380441111111">+38 044 111 11 11</a>
+        <button type="button" class="header-btn btn">онлайн-запись</button>
     </header>
-    <section>
+    <section class="hero">
         <div>
-            <ul>
-                <li><a href="">Youtube</a></li>
-                <li><a href="">Instagram</a></li>
+            <ul class="hero-list social-list">
+                <li class="hero-item"><a class="hero-link" href="">Youtube</a></li>
+                <li class="hero-item"><a class="hero-link" href="">Instagram</a></li>
             </ul>
         </div>
         <div>
-            <p>A hair salon for men in Kyiv</p>
-            <h1>BarberShop</h1>
-            <p>Мы эксперты в модных мужских стрижках.
+            <p class="hero-suptext section-suptext">A hair salon for men in Kyiv</p>
+            <h1 class="hero-title">BarberShop</h1>
+            <p class="hero-subtext section-subtext">Мы эксперты в модных мужских стрижках.
             Работаем быстро, осторожно и со вкусом.</p>
         </div>
     </section>
-    <section>
+    <section class="about">
         <ul>
             <li>
                 <img src="./images/about-1-min.jpg" width="270" height="445" alt="подготовка к бритью">
@@ -53,33 +57,49 @@
             </li>
         </ul>
         <div>
-            <p>О нас</p>
-            <h2>Лучший Барбершоп
+            <p class="about-suptext section-suptext">О нас</p>
+            <h2 class="about-title section-title">Лучший Барбершоп
             твоего города</h2>
-            <p>Если ты хочешь добавить в свой образ больше уверенности – тебе точно к нам.</p>
-            <p>Мы команда, которая никогда не останавливается на достигнутом
+            <p class="section-subtext about-subtext">Если ты хочешь добавить в свой образ больше уверенности – тебе точно к нам.</p>
+            <p class="about-text section-text">Мы команда, которая никогда не останавливается на достигнутом
             и жаждет перемен. И когда ты попадешь в руки нашего мастера,
             то уже никогда не сможешь быть прежним. Мы команда, которая всегда с клиентами "на одной волне". Поэтому, мы всегда
             готовы усовершенствовать каждого, кто к нам приходит!</p>
-            <button type="button">онлайн-запись</button>
+            <button class="btn about-btn" type="button">онлайн-запись</button>
         </div>
     </section>
-    <section>
-        <p>Проведи время в компании лучших мастеров</p>
-        <h2>Услуги и цены</h2>
-        <ul>
-            <li><span>Мужская стрижка</span><span>от 300 грн.</span></li>
-            <li><span>Стрижка бороды</span><span>от 200 грн.</span></li>
-            <li><span>Стрижка усов</span><span>от 200 грн.</span></li>
-            <li><span>Бритье опасной бритвой</span><span>от 200 грн.</span></li>
+    <section class="prices">
+        <p class="prices-suptext section-suptext">Проведи время в компании лучших мастеров</p>
+        <h2 class="prices-title section-title">Услуги и цены</h2>
+        <ul class="prices-list">
+            <li class="prices-item">
+                <span class="prices-item-text">Мужская стрижка</span><span class="prices-item-text">от 300 грн.</span>
+            </li>
+            <li class="prices-item">
+                <span class="prices-item-text">Стрижка бороды</span><span class="prices-item-text">от 200 грн.</span>
+            </li>
+            <li class="prices-item">
+                <span class="prices-item-text">Стрижка усов</span><span class="prices-item-text">от 200 грн.</span>
+            </li>
+            <li class="prices-item">
+                <span class="prices-item-text">Бритье опасной бритвой</span><span class="prices-item-text">от 200 грн.</span>
+            </li>
         </ul>
-        <ul>
-            <li><span>Cтрижка у стажера</span><span>от 50 грн.</span></li>
-            <li><span>Стрижка под насадку</span><span>от 200 грн.</span></li>
-            <li><span>Детская стрижка (до 12 лет)</span><span>от 300 грн.</span></li>
-            <li><span>Камуфлирование седины</span><span>от 200 грн.</span></li>
+        <ul class="prices-list">
+            <li class="prices-item">
+                <span class="prices-item-text">Cтрижка у стажера</span><span class="prices-item-text">от 50 грн.</span>
+            </li>
+            <li class="prices-item">
+                <span class="prices-item-text">Стрижка под насадку</span><span class="prices-item-text">от 200 грн.</span>
+            </li>
+            <li class="prices-item">
+                <span class="prices-item-text">Детская стрижка (до 12 лет)</span><span class="prices-item-text">от 300 грн.</span>
+            </li>
+            <li class="prices-item">
+                <span class="prices-item-text">Камуфлирование седины</span><span class="prices-item-text">от 200 грн.</span>
+            </li>
         </ul>
-        <button type="button">онлайн-запись</button>
+        <button class="btn prices-btn" type="button">онлайн-запись</button>
     </section>
     <section>
         <ul>
