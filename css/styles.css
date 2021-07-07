@@ -177,3 +177,45 @@ a {
 .prices-btn {
     color: #ffffff;
 }
+
+/* ----------------------------REASON -------------------------------*/
+
+.reason-digit {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.05em;
+
+    color: #303030;
+}
+
+.reason-item-text {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    text-align: center;
+    color: #303030;
+}
+
+.reason-suptext {
+    color: #303030;
+}
+
+.reason-title {
+    color: #303030;
+}
+
+.reason-subtext {
+    color: #555555;
+}
+
+/* ----------------------------MASTERS -------------------------------*/
+
+.masters-suptext {
+    color: #303030;
+}
+
+.masters-title {
+    color: #303030;
+}
