@@ -315,16 +315,22 @@ a {
     display: flex;
     flex-wrap: wrap;
     width: 370px;
-    margin-left: -30px;
-    margin-top: -30px;
+    align-items: flex-start;
 }
 
 .reason-item {
-    flex-basis: calc((100% / 2) - 30px);
-    margin-left: 30px;
-    margin-top: 30px;
-    padding: 20px 24px;
+    width: 170px;
+
+    padding: 20px;
     background-color: #f7f7f7;
+}
+
+.reason-item:nth-child(odd) {
+    margin-right: 30px;
+}
+
+.reason-item:nth-child(even) {
+    margin-top: 30px;
 }
 
 .reason-digit {
@@ -333,7 +339,7 @@ a {
     line-height: 1.36;
     text-align: center;
     letter-spacing: 0.05em;
-
+    display: block;
     color: #303030;
 }
 
@@ -361,16 +367,36 @@ a {
 
 .reason-subtext {
     color: #555555;
+    max-width: 500px;
 }
 
 /* ----------------------------MASTERS -------------------------------*/
 
 .masters-suptext {
     color: #303030;
+    margin-bottom: 20px;
 }
 
 .masters-title {
     color: #303030;
+    margin-bottom: 44px;
+}
+
+.masters-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+}
+
+.masters-item {
+    flex-basis: calc((100% - 90px) / 3);
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.masters-item-content {
+    padding-top: 30px;
 }
 
 .masters-item-title {
@@ -380,6 +406,7 @@ a {
     letter-spacing: 0.02em;
     color: #303030;
     font-weight: 400;
+    margin-bottom: 8px;
 }
 
 .masters-item-text {
@@ -394,12 +421,54 @@ a {
 
 .barba-suptext {
     color: #303030;
+    margin-bottom: 44px;
+}
+
+.barba-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+}
+
+.barba-item {
+    flex-basis: calc((100% - 120px) / 4);
+    margin-left: 30px;
+    margin-top: 30px;
 }
 
 /* ----------------------------CONTACTS -------------------------------*/
 
+.connect-wrapper {
+    background-color: rgb(46, 45, 45);
+}
+
+.form {
+    width: 560px;
+}
+
+.connect-wrapper .container {
+    display: flex;
+}
+
+.online {
+    margin-right: 140px;
+}
+
+.contacts {
+    background-color: rgb(46, 45, 45);
+}
+
 .contacts-title {
     color: #ffffff;
+    margin-bottom: 40px;
+}
+
+.contacts-list {
+    margin-bottom: 70px;
+}
+.contacts-item:not(:last-child) {
+    margin-bottom: 20px;
 }
 
 .contacts-link {
@@ -413,8 +482,14 @@ a {
 
 .contacts-suptext {
     color: #ffffff;
+    margin-bottom: 20px;
 }
 /* ----------------------------FOOTER -------------------------------*/
+
+.footer {
+    padding-top: 58px;
+    padding-bottom: 57px;
+}
 
 .footer-text {
     font-size: 11px;
@@ -422,4 +497,22 @@ a {
     letter-spacing: 0.2em;
     line-height: 1.36;
     color: #9da4bd;
+}
+
+.footer-link {
+    color: #303030;
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-list {
+    display: flex;
+}
+
+.footer-item + .footer-item {
+    margin-left: 40px;
 }
