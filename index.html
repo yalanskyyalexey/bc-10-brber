@@ -9,122 +9,152 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+        integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
     <header class="header">
-        <nav class="navigation">
-            <a href="" class="logo"><img src="./images/logo.svg" alt="лаготип"></a>
-            <ul class="menu-list">
-                <li class="menu-item">
-                    <a class="menu-link" href="">О нас</a>
-                </li>
-                <li class="menu-item">
-                    <a class="menu-link" href="">Услуги и цены</a>
-                </li>
-                <li class="menu-item">
-                    <a class="menu-link" href="">Мастера</a>
-                </li>
-                <li class="menu-item">
-                    <a class="menu-link" href="">Контакты</a>
-                </li>
-            </ul>
-        </nav>
-        <a class="header-phone" href="tel:+380441111111">+38 044 111 11 11</a>
-        <button type="button" class="header-btn btn">онлайн-запись</button>
+        <div class="container">
+            <nav class="navigation">
+                <a href="" class="logo"><img src="./images/logo.svg" alt="лаготип"></a>
+                <ul class="menu-list">
+                    <li class="menu-item">
+                        <a class="menu-link" href="">О нас</a>
+                    </li>
+                    <li class="menu-item">
+                        <a class="menu-link" href="">Услуги и цены</a>
+                    </li>
+                    <li class="menu-item">
+                        <a class="menu-link" href="">Мастера</a>
+                    </li>
+                    <li class="menu-item">
+                        <a class="menu-link" href="">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header-right">
+                <a class="header-phone" href="tel:+380441111111">+38 044 111 11 11</a>
+                <button type="button" class="header-btn btn">онлайн-запись</button>
+            </div>
+        </div>
+        
+        
     </header>
     <section class="hero">
-        <div>
-            <ul class="hero-list social-list">
-                <li class="hero-item"><a class="hero-link" href="">Youtube</a></li>
-                <li class="hero-item"><a class="hero-link" href="">Instagram</a></li>
-            </ul>
-        </div>
-        <div>
-            <p class="hero-suptext section-suptext">A hair salon for men in Kyiv</p>
-            <h1 class="hero-title">BarberShop</h1>
-            <p class="hero-subtext section-subtext">Мы эксперты в модных мужских стрижках.
-            Работаем быстро, осторожно и со вкусом.</p>
-        </div>
-    </section>
-    <section class="about">
-        <ul>
-            <li>
-                <img src="./images/about-1-min.jpg" width="270" height="445" alt="подготовка к бритью">
-            </li>      
-            <li>
-                <img src="./images/about-2-min.jpg" width="270" height="445"  alt="бреет шею">
-            </li>
-        </ul>
-        <div>
-            <p class="about-suptext section-suptext">О нас</p>
-            <h2 class="about-title section-title">Лучший Барбершоп
-            твоего города</h2>
-            <p class="section-subtext about-subtext">Если ты хочешь добавить в свой образ больше уверенности – тебе точно к нам.</p>
-            <p class="about-text section-text">Мы команда, которая никогда не останавливается на достигнутом
-            и жаждет перемен. И когда ты попадешь в руки нашего мастера,
-            то уже никогда не сможешь быть прежним. Мы команда, которая всегда с клиентами "на одной волне". Поэтому, мы всегда
-            готовы усовершенствовать каждого, кто к нам приходит!</p>
-            <button class="btn about-btn" type="button">онлайн-запись</button>
+        <div class="container">
+
+            
+            <div class="hero-social">
+                <ul class="hero-list social-list">
+                    <li class="hero-item"><a class="hero-link" href="">Youtube</a></li>
+                    <li class="hero-item"><a class="hero-link" href="">Instagram</a></li>
+                </ul>
+            </div>
+            <div class="hero-content">
+                <p class="hero-suptext section-suptext">A hair salon for men in Kyiv</p>
+                <h1 class="hero-title">BarberShop</h1>
+                <p class="hero-subtext section-subtext">Мы эксперты в модных мужских стрижках.
+                Работаем быстро, осторожно и со вкусом.</p>
+            </div>
         </div>
     </section>
-    <section class="prices">
-        <p class="prices-suptext section-suptext">Проведи время в компании лучших мастеров</p>
-        <h2 class="prices-title section-title">Услуги и цены</h2>
-        <ul class="prices-list">
-            <li class="prices-item">
-                <span class="prices-item-text">Мужская стрижка</span><span class="prices-item-text">от 300 грн.</span>
-            </li>
-            <li class="prices-item">
-                <span class="prices-item-text">Стрижка бороды</span><span class="prices-item-text">от 200 грн.</span>
-            </li>
-            <li class="prices-item">
-                <span class="prices-item-text">Стрижка усов</span><span class="prices-item-text">от 200 грн.</span>
-            </li>
-            <li class="prices-item">
-                <span class="prices-item-text">Бритье опасной бритвой</span><span class="prices-item-text">от 200 грн.</span>
-            </li>
-        </ul>
-        <ul class="prices-list">
-            <li class="prices-item">
-                <span class="prices-item-text">Cтрижка у стажера</span><span class="prices-item-text">от 50 грн.</span>
-            </li>
-            <li class="prices-item">
-                <span class="prices-item-text">Стрижка под насадку</span><span class="prices-item-text">от 200 грн.</span>
-            </li>
-            <li class="prices-item">
-                <span class="prices-item-text">Детская стрижка (до 12 лет)</span><span class="prices-item-text">от 300 грн.</span>
-            </li>
-            <li class="prices-item">
-                <span class="prices-item-text">Камуфлирование седины</span><span class="prices-item-text">от 200 грн.</span>
-            </li>
-        </ul>
-        <button class="btn prices-btn" type="button">онлайн-запись</button>
-    </section>
-    <section class="reason">
-        <ul class="reason-list">
-            <li class="reason-item">
-                <span class="reason-digit">600</span>
-                 <p class="reason-item-text">Довольных клиентов в день</p>
+    <section class="about section">
+        <div class="container">
+            <ul class="about-list">
+                <li class="about-item">
+                    <img src="./images/about-1-min.jpg" width="270" height="445" alt="подготовка к бритью">
+                </li>      
+                <li class="about-item">
+                    <img src="./images/about-2-min.jpg" width="270" height="445"  alt="бреет шею">
                 </li>
-            <li class="reason-item">
-                <span class="reason-digit">50</span>
-                <p class="reason-item-text">Наград за отличный сервис</p>
-            </li>
-            <li class="reason-item">
-                <span class="reason-digit">20</span>
-                <p class="reason-item-text">Лучших мастеров Киева</p>
-            </li>
-            <li class="reason-item">
-                <span class="reason-digit">100</span>
-                <p class="reason-item-text">Подарков постоянным клиентам</p>
-            </li>
-        </ul>
-        <div>
-            <p class="reason-suptext section-suptext">старая традиционная школа</p>
-            <h2 class="reason-title section-title">Почему приходят именно к нам?</h2>
-            <p class="reason-subtext section-subtext">О нас говорят только хорошее. Но лучше 1 раз увидеть и прочувствовать, чем 10 раз прочитать.</p>
+            </ul>
+            <div>
+                <p class="about-suptext section-suptext">О нас</p>
+                <h2 class="about-title section-title">Лучший Барбершоп
+                твоего города</h2>
+                <p class="section-subtext about-subtext">Если ты хочешь добавить в свой образ больше уверенности – тебе точно к нам.</p>
+                <p class="about-text section-text">Мы команда, которая никогда не останавливается на достигнутом
+                и жаждет перемен. И когда ты попадешь в руки нашего мастера,
+                то уже никогда не сможешь быть прежним. Мы команда, которая всегда с клиентами "на одной волне". Поэтому, мы всегда
+                готовы усовершенствовать каждого, кто к нам приходит!</p>
+                <button class="btn about-btn" type="button">онлайн-запись</button>
+            </div>
         </div>
+    </section>
+    <section class="prices section">
+        <div class="container">
+
+        
+            <p class="prices-suptext section-suptext">Проведи время в компании лучших мастеров</p>
+            <h2 class="prices-title section-title">Услуги и цены</h2>
+            <div class="prices-info">
+                <ul class="prices-list">
+                    <li class="prices-item">
+                        <span class="prices-item-text">Мужская стрижка</span><span class="prices-item-text">от 300 грн.</span>
+                    </li>
+                    <li class="prices-item">
+                        <span class="prices-item-text">Стрижка бороды</span><span class="prices-item-text">от 200 грн.</span>
+                    </li>
+                    <li class="prices-item">
+                        <span class="prices-item-text">Стрижка усов</span><span class="prices-item-text">от 200 грн.</span>
+                    </li>
+                    <li class="prices-item">
+                        <span class="prices-item-text">Бритье опасной бритвой</span><span class="prices-item-text">от 200 грн.</span>
+                    </li>
+                </ul>
+                <ul class="prices-list">
+                    <li class="prices-item">
+                        <span class="prices-item-text">Cтрижка у стажера</span><span class="prices-item-text">от 50 грн.</span>
+                    </li>
+                    <li class="prices-item">
+                        <span class="prices-item-text">Стрижка под насадку</span><span class="prices-item-text">от 200 грн.</span>
+                    </li>
+                    <li class="prices-item">
+                        <span class="prices-item-text">Детская стрижка (до 12 лет)</span><span class="prices-item-text">от 300
+                            грн.</span>
+                    </li>
+                    <li class="prices-item">
+                        <span class="prices-item-text">Камуфлирование седины</span><span class="prices-item-text">от 200 грн.</span>
+                    </li>
+                </ul>
+            </div>
+            
+            <button class="btn prices-btn" type="button">онлайн-запись</button>
+        </div>
+    </section>
+    <section class="reason section dif-pt">
+        <div class="container">
+            <div class="reason-left">
+                <ul class="reason-list">
+                    <li class="reason-item">
+                        <span class="reason-digit">600</span>
+                        <p class="reason-item-text">Довольных клиентов в день</p>
+                    </li>
+                    <li class="reason-item">
+                        <span class="reason-digit">50</span>
+                        <p class="reason-item-text">Наград за отличный сервис</p>
+                    </li>
+                    <li class="reason-item">
+                        <span class="reason-digit">20</span>
+                        <p class="reason-item-text">Лучших мастеров Киева</p>
+                    </li>
+                    <li class="reason-item">
+                        <span class="reason-digit">100</span>
+                        <p class="reason-item-text">Подарков постоянным клиентам</p>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="reason-right"> 
+                <p class="reason-suptext section-suptext">старая традиционная школа</p>
+                <h2 class="reason-title section-title">Почему приходят именно к нам?</h2>
+                <p class="reason-subtext section-subtext">О нас говорят только хорошее. Но лучше 1 раз увидеть и прочувствовать, чем
+                    10 раз прочитать.</p>
+            </div>
+        </div>
+        
     </section>
     <section class="masters">
         <p class="masters-suptext section-suptext">для настоящих ценителей атмосферы</p>

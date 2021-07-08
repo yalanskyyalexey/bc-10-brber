@@ -8,8 +8,20 @@ body {
     font-family: "Open Sans", sans-serif;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
 ul {
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .list {
@@ -24,7 +36,21 @@ a {
     text-decoration: none;
 }
 
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
+.section {
+    padding-top: 130px;
+    padding-bottom: 130px;
+}
+
 .btn {
+    width: 160px;
+    height: 40px;
     font-family: inherit;
     font-weight: 600;
     font-size: 12px;
@@ -33,6 +59,9 @@ a {
     text-transform: uppercase;
     cursor: pointer;
     background-color: transparent;
+    border: 1px solid #ff6c00;
+
+    border-radius: 25px;
 }
 
 .btn:hover,
@@ -78,6 +107,27 @@ a {
     font-size: 12px;
     line-height: 1.33;
     letter-spacing: 0.1em;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+}
+
+.menu-list {
+    display: flex;
+    margin-left: 71px;
+}
+
+.menu-item:not(:last-child) {
+    margin-right: 40px;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
 }
 
 .menu-link {
@@ -88,18 +138,32 @@ a {
     color: var(--accent-color);
 }
 
+.header-right {
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+}
+
 .header-phone {
     color: var(--header-text-color);
 }
 
 .header-btn {
     color: var(--header-text-color);
+    margin-left: 40px;
 }
 
 /* ----------------------------HERO -------------------------------*/
 
 .hero {
-    background-color: gray;
+}
+
+.hero .container {
+    display: flex;
+}
+
+.hero-social {
+    width: 85px;
 }
 
 .hero-link {
@@ -115,8 +179,17 @@ a {
     color: var(--accent-color);
 }
 
+.hero-content {
+    width: 100%;
+    background-color: gray;
+    padding-top: 172px;
+    padding-bottom: 206px;
+    padding-left: 100px;
+}
+
 .hero-suptext {
     color: var(--pre-title-color);
+    margin-bottom: 20px;
 }
 
 .hero-title {
@@ -125,28 +198,46 @@ a {
     line-height: 1.18;
     letter-spacing: 0.05em;
     color: #ffffff;
+    margin-bottom: 20px;
 }
 
 .hero-subtext {
     color: #9da4bd;
+    max-width: 486px;
 }
 
 /* ----------------------------ABOUT -------------------------------*/
 
+.about .container {
+    display: flex;
+}
 .about-title {
     color: #303030;
+    margin-bottom: 20px;
+}
+
+.about-list {
+    display: flex;
+    margin-right: 64px;
+}
+.about-item:not(:last-child) {
+    margin-right: 30px;
 }
 
 .about-suptext {
     color: #303030;
+    margin-bottom: 20px;
 }
 
 .about-subtext {
     color: #555555;
+    margin-bottom: 20px;
 }
 
 .about-text {
     color: #555555;
+    margin-bottom: 40px;
+    max-width: 500px;
 }
 
 .about-btn {
@@ -155,14 +246,37 @@ a {
 
 /* ----------------------------PRICES -------------------------------*/
 .prices {
-    background-color: gray;
+    background-color: rgb(44, 42, 42);
 }
 .prices-suptext {
     color: var(--pre-title-color);
+    margin-bottom: 20px;
 }
 
 .prices-title {
     color: #ffffff;
+    margin-bottom: 44px;
+}
+
+.prices-info {
+    display: flex;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.prices-list {
+    border: 1px solid #ffffff;
+    padding: 30px 40px;
+    width: 50%;
+}
+
+.prices-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.prices-item + .prices-item {
+    margin-top: 20px;
 }
 
 .prices-item-text {
@@ -176,9 +290,42 @@ a {
 
 .prices-btn {
     color: #ffffff;
+    margin: 0 auto;
+    display: block;
 }
 
 /* ----------------------------REASON -------------------------------*/
+
+.reason.dif-pt {
+    padding-top: 121px;
+}
+
+.reason .container {
+    display: flex;
+}
+
+.reason-left {
+    width: 50%;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.reason-list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 370px;
+    margin-left: -30px;
+    margin-top: -30px;
+}
+
+.reason-item {
+    flex-basis: calc((100% / 2) - 30px);
+    margin-left: 30px;
+    margin-top: 30px;
+    padding: 20px 24px;
+    background-color: #f7f7f7;
+}
 
 .reason-digit {
     font-weight: 700;
@@ -198,12 +345,18 @@ a {
     color: #303030;
 }
 
+.reason-right {
+    padding-left: 15px;
+}
+
 .reason-suptext {
     color: #303030;
+    margin-bottom: 20px;
 }
 
 .reason-title {
     color: #303030;
+    margin-bottom: 20px;
 }
 
 .reason-subtext {
