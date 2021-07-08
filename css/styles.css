@@ -219,3 +219,54 @@ a {
 .masters-title {
     color: #303030;
 }
+
+.masters-item-title {
+    font-size: 18px;
+    line-height: 1.39;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #303030;
+    font-weight: 400;
+}
+
+.masters-item-text {
+    font-size: 14px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #ff6c00;
+}
+
+/* ----------------------------BARBA -------------------------------*/
+
+.barba-suptext {
+    color: #303030;
+}
+
+/* ----------------------------CONTACTS -------------------------------*/
+
+.contacts-title {
+    color: #ffffff;
+}
+
+.contacts-link {
+    font-size: 18px;
+    line-height: 1.67;
+    font-style: normal;
+    letter-spacing: 0.02em;
+
+    color: #9da4bd;
+}
+
+.contacts-suptext {
+    color: #ffffff;
+}
+/* ----------------------------FOOTER -------------------------------*/
+
+.footer-text {
+    font-size: 11px;
+    line-height: 15px;
+    letter-spacing: 0.2em;
+    line-height: 1.36;
+    color: #9da4bd;
+}
