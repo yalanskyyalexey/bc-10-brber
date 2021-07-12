@@ -58,10 +58,11 @@ a {
     letter-spacing: 0.09em;
     text-transform: uppercase;
     cursor: pointer;
+    color: #ff6c00;
     background-color: transparent;
     border: 1px solid #ff6c00;
-
     border-radius: 25px;
+    transition: color 300ms linear, background-color 300ms linear;
 }
 
 .btn:hover,
@@ -112,13 +113,13 @@ a {
 /* ----------------------------HEADER -------------------------------*/
 
 .header {
-    background-color: gray;
     font-weight: 600;
     font-size: 12px;
     line-height: 1.33;
     letter-spacing: 0.1em;
     padding-top: 32px;
     padding-bottom: 32px;
+    position: absolute;
 }
 
 .header .container {
@@ -146,6 +147,7 @@ a {
 
 .menu-link {
     color: var(--header-text-color);
+    transition: color 300ms linear;
 }
 .menu-link:hover,
 .menu-link:focus {
@@ -160,6 +162,12 @@ a {
 
 .header-phone {
     color: var(--header-text-color);
+    transition: color 300ms linear;
+}
+
+.header-phone:hover,
+.header-phone:focus {
+    color: var(--accent-color);
 }
 
 .header-btn {
@@ -203,7 +211,7 @@ a {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    padding-top: 172px;
+    padding-top: 272px;
     padding-bottom: 206px;
     padding-left: 100px;
 }
@@ -488,11 +496,14 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: background-color 600ms linear;
 }
 
 .social-icon {
     width: 20px;
     height: 20px;
+    fill: #303030;
+    transition: fill 200ms linear;
 }
 
 .social-link:hover {
