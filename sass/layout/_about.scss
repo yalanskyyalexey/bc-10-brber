@@ -1,0 +1,29 @@
+.about .container {
+    display: flex;
+}
+.about-right__title {
+    margin-bottom: 20px;
+}
+
+.about-list {
+    display: flex;
+    margin-right: 64px;
+}
+.about-list__item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.about-right__suptext {
+    margin-bottom: 20px;
+}
+
+
+
+.about-right__subtext {
+    margin-bottom: 20px;
+}
+
+.about-right__text {
+    margin-bottom: 40px;
+    max-width: 500px;
+}

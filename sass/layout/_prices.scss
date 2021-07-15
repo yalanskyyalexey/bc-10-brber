@@ -1,0 +1,23 @@
+.prices {
+    background-image: url(../images/price-img.png),
+        linear-gradient(#111319, #111319);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.prices__suptext {
+    margin-bottom: 20px;
+}
+
+.prices__title {
+    margin-bottom: 44px;
+}
+
+.prices__info {
+    margin-bottom: 50px;
+}
+
+.prices-info {
+    display: flex;
+    width: 100%;
+}

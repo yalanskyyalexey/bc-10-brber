@@ -14,34 +14,35 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
         <link rel="stylesheet" href="./css/styles.css">
+        <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
     <header class="header">
         <div class="container">
             <nav class="navigation">
                 <a href="" class="logo">
-                    <svg class="logo-icon" width="69" height="55">
+                    <svg class="logo__icon" width="69" height="55">
                         <use href="./images/sprite.svg#icon-logo "></use>
                     </svg>
                 </a>
-                <ul class="menu-list">
-                    <li class="menu-item">
-                        <a class="menu-link" href="">О нас</a>
+                <ul class="menu-list navigation__menu">
+                    <li class="menu-list__item">
+                        <a class="menu-list__link" href="">О нас</a>
                     </li>
-                    <li class="menu-item">
-                        <a class="menu-link" href="">Услуги и цены</a>
+                    <li class="menu-list__item">
+                        <a class="menu-list__link" href="">Услуги и цены</a>
                     </li>
-                    <li class="menu-item">
-                        <a class="menu-link" href="">Мастера</a>
+                    <li class="menu-list__item">
+                        <a class="menu-list__link" href="">Мастера</a>
                     </li>
-                    <li class="menu-item">
-                        <a class="menu-link" href="">Контакты</a>
+                    <li class="menu-list__item">
+                        <a class="menu-list__link" href="">Контакты</a>
                     </li>
                 </ul>
             </nav>
             <div class="header-right">
-                <a class="header-phone" href="tel:+380441111111">+38 044 111 11 11</a>
-                <button type="button" class="header-btn btn">онлайн-запись</button>
+                <a class="header-right__phone" href="tel:+380441111111">+38 044 111 11 11</a>
+                <button type="button" class="header-right__btn btn  btn_color_white">онлайн-запись</button>
             </div>
         </div>
         
@@ -49,19 +50,17 @@
     </header>
     <section class="hero">
         <div class="container">
-
-            
             <div class="hero-social">
                 <ul class="hero-list social-list">
                     
-                    <li class="hero-item"><a class="hero-link" href="">Instagram</a></li>
-                    <li class="hero-item"><a class="hero-link" href="">Youtube</a></li>
+                    <li class="hero-list__item"><a class="hero-list__link" href="">Instagram</a></li>
+                    <li class="hero-list__item"><a class="hero-list__link" href="">Youtube</a></li>
                 </ul>
             </div>
             <div class="hero-content">
-                <p class="hero-suptext section-suptext">A hair salon for men in Kyiv</p>
-                <h1 class="hero-title ">BarberShop</h1>
-                <p class="hero-subtext section-subtext">Мы эксперты в модных мужских стрижках.
+                <p class="hero-content__suptext suptext  suptext_color_gray">A hair salon for men in Kyiv</p>
+                <h1 class="hero-content__title ">BarberShop</h1>
+                <p class="hero-content__subtext subtext subtext_color_gray">Мы эксперты в модных мужских стрижках.
                 Работаем быстро, осторожно и со вкусом.</p>
             </div>
         </div>
@@ -69,94 +68,92 @@
     <section class="about section">
         <div class="container">
             <ul class="about-list">
-                <li class="about-item">
+                <li class="about-list__item">
                     <img src="./images/about-1-min.jpg" width="270" height="445" alt="подготовка к бритью">
                 </li>      
                 <li class="about-item">
                     <img src="./images/about-2-min.jpg" width="270" height="445"  alt="бреет шею">
                 </li>
             </ul>
-            <div>
-                <p class="about-suptext section-suptext">О нас</p>
-                <h2 class="about-title section-title">Лучший Барбершоп
+            <div class="about-right">
+                <p class="about-right__suptext suptext suptext_color_dark">О нас</p>
+                <h2 class="about-right__title section-title section-title_color_dark">Лучший Барбершоп
                 твоего города</h2>
-                <p class="section-subtext about-subtext">Если ты хочешь добавить в свой образ больше уверенности – тебе точно к нам.</p>
-                <p class="about-text section-text">Мы команда, которая никогда не останавливается на достигнутом
+                <p class="subtext about-right__subtext subtext_color_dark-gray">Если ты хочешь добавить в свой образ больше уверенности – тебе точно к нам.</p>
+                <p class="about-right__text section-text section-text_color_dark-gray">Мы команда, которая никогда не останавливается на достигнутом
                 и жаждет перемен. И когда ты попадешь в руки нашего мастера,
                 то уже никогда не сможешь быть прежним. Мы команда, которая всегда с клиентами "на одной волне". Поэтому, мы всегда
                 готовы усовершенствовать каждого, кто к нам приходит!</p>
-                <button class="btn about-btn" type="button">онлайн-запись</button>
+                <button class="btn btn_color_dark" type="button">онлайн-запись</button>
             </div>
         </div>
     </section>
     <section class="prices section">
         <div class="container">
-
-        
-            <p class="prices-suptext section-suptext">Проведи время в компании лучших мастеров</p>
-            <h2 class="prices-title section-title">Услуги и цены</h2>
-            <div class="prices-info">
-                <ul class="prices-list prices-list-left">
-                    <li class="prices-item">
-                        <span class="prices-item-text">Мужская стрижка</span><span class="prices-item-text">от 300 грн.</span>
+            <p class="prices__suptext suptext suptext_color_gray">Проведи время в компании лучших мастеров</p>
+            <h2 class="prices__title section-title section-title_color_light">Услуги и цены</h2>
+            <div class="prices-info prices__info ">
+                <ul class="prices-list prices-list_bg_light">
+                    <li class="prices-list__item">
+                        <span class="prices-list__text">Мужская стрижка</span><span class="prices-list__text">от 300 грн.</span>
                     </li>
-                    <li class="prices-item">
-                        <span class="prices-item-text">Стрижка бороды</span><span class="prices-item-text">от 200 грн.</span>
+                    <li class="prices-list__item">
+                        <span class="prices-list__text">Стрижка бороды</span><span class="prices-list__text">от 200 грн.</span>
                     </li>
-                    <li class="prices-item">
-                        <span class="prices-item-text">Стрижка усов</span><span class="prices-item-text">от 200 грн.</span>
+                    <li class="prices-list__item">
+                        <span class="prices-list__text">Стрижка усов</span><span class="prices-list__text">от 200 грн.</span>
                     </li>
-                    <li class="prices-item">
-                        <span class="prices-item-text">Бритье опасной бритвой</span><span class="prices-item-text">от 200 грн.</span>
+                    <li class="prices-list__item">
+                        <span class="prices-list__text">Бритье опасной бритвой</span><span class="prices-list__text">от 200 грн.</span>
                     </li>
                 </ul>
-                <ul class="prices-list prices-list-right">
-                    <li class="prices-item">
-                        <span class="prices-item-text">Cтрижка у стажера</span><span class="prices-item-text">от 50 грн.</span>
+                <ul class="prices-list prices-list_bg_dark">
+                    <li class="prices-list__item">
+                        <span class="prices-list__text">Cтрижка у стажера</span><span class="prices-list__text">от 50 грн.</span>
                     </li>
-                    <li class="prices-item">
-                        <span class="prices-item-text">Стрижка под насадку</span><span class="prices-item-text">от 200 грн.</span>
+                    <li class="prices-list__item">
+                        <span class="prices-list__text">Стрижка под насадку</span><span class="prices-list__text">от 200 грн.</span>
                     </li>
-                    <li class="prices-item">
-                        <span class="prices-item-text">Детская стрижка (до 12 лет)</span><span class="prices-item-text">от 300
+                    <li class="prices-list__item">
+                        <span class="prices-list__text">Детская стрижка (до 12 лет)</span><span class="prices-list__text">от 300
                             грн.</span>
                     </li>
-                    <li class="prices-item">
-                        <span class="prices-item-text">Камуфлирование седины</span><span class="prices-item-text">от 200 грн.</span>
+                    <li class="prices-list__item">
+                        <span class="prices-list__text">Камуфлирование седины</span><span class="prices-list__text">от 200 грн.</span>
                     </li>
                 </ul>
             </div>
             
-            <button class="btn prices-btn" type="button">онлайн-запись</button>
+            <button class="btn btn_color_white" type="button">онлайн-запись</button>
         </div>
     </section>
     <section class="reason section dif-pt">
         <div class="container">
             <div class="reason-left">
                 <ul class="reason-list">
-                    <li class="reason-item">
-                        <span class="reason-digit">600</span>
-                        <p class="reason-item-text">Довольных клиентов в день</p>
+                    <li class="reason-list__item">
+                        <span class="reason-list__digit">600</span>
+                        <p class="reason-list__text">Довольных клиентов в день</p>
                     </li>
-                    <li class="reason-item">
-                        <span class="reason-digit">50</span>
-                        <p class="reason-item-text">Наград за отличный сервис</p>
+                    <li class="reason-list__item">
+                        <span class="reason-list__digit">50</span>
+                        <p class="reason-list__text">Наград за отличный сервис</p>
                     </li>
-                    <li class="reason-item">
-                        <span class="reason-digit">20</span>
-                        <p class="reason-item-text">Лучших мастеров Киева</p>
+                    <li class="reason-list__item">
+                        <span class="reason-list__digit">20</span>
+                        <p class="reason-list__text">Лучших мастеров Киева</p>
                     </li>
-                    <li class="reason-item">
-                        <span class="reason-digit">100</span>
-                        <p class="reason-item-text">Подарков постоянным клиентам</p>
+                    <li class="reason-list__item">
+                        <span class="reason-list__digit">100</span>
+                        <p class="reason-list__text">Подарков постоянным клиентам</p>
                     </li>
                 </ul>
             </div>
             
             <div class="reason-right"> 
-                <p class="reason-suptext section-suptext">старая традиционная школа</p>
-                <h2 class="reason-title section-title">Почему приходят именно к нам?</h2>
-                <p class="reason-subtext section-subtext">О нас говорят только хорошее. Но лучше 1 раз увидеть и прочувствовать, чем
+                <p class="reason-right__suptext suptext suptext_color_dark">старая традиционная школа</p>
+                <h2 class="reason-right__title section-title section-title_color_dark">Почему приходят именно к нам?</h2>
+                <p class="reason-right__subtext subtext subtext_color_dark-gray">О нас говорят только хорошее. Но лучше 1 раз увидеть и прочувствовать, чем
                     10 раз прочитать.</p>
             </div>
         </div>
@@ -164,45 +161,45 @@
     </section>
     <section class="masters section">
         <div class="container">
-            <p class="masters-suptext section-suptext">для настоящих ценителей атмосферы</p>
-            <h2 class="masters-title section-title">Наши мастера</h2>
-            <ul class="masters-list">
-                <li class="masters-item">
-                    <div class="masters-wrap">
+            <p class="masters__suptext suptext suptext_color_dark">для настоящих ценителей атмосферы</p>
+            <h2 class="masters__title section-title section-title_color_dark">Наши мастера</h2>
+            <ul class="masters-list masters__list">
+                <li class="masters-list__item master-card">
+                    <div class="master-card__wrap">
                         <img src="./images/master-1.jpg" width="370" height="346" alt="Джон Смит">
-                        <p class="masters-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic maxime praesentium debitis
+                        <p class="master-card__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic maxime praesentium debitis
                             molestias, dolorem at ipsa nisi nobis saepe minima odit placeat, officiis rerum tempore adipisci perferendis minus
                             veritatis eos officia? Necessitatibus quod neque autem provident explicabo veritatis! Amet, alias.</p>
                     </div>
                     
-                    <div class="masters-item-content">
-                        <h3 class="masters-item-title">John Smith</h3>
-                        <p class="masters-item-text">Extreme Barber</p>
-                        <ul class="masters-social-list">
-                            <li class="social-item">
-                                <a href="" class="social-link">
-                                    <svg class="social-icon" >
+                    <div class="master-card__content">
+                        <h3 class="master-card__title">John Smith</h3>
+                        <p class="master-card__text">Extreme Barber</p>
+                        <ul class="master-card__list social-list">
+                            <li class="social-list__item">
+                                <a href="" class="social-list__link">
+                                    <svg class="social-list__icon" >
                                         <use href="./images/sprite.svg#icon-instagram "></use>
                                     </svg>
                                 </a>
                             </li>
-                            <li class="social-item">
-                                <a href="" class="social-link">
-                                    <svg class="social-icon">
+                            <li class="social-list__item">
+                                <a href="" class="social-list__link">
+                                    <svg class="social-list__icon">
                                         <use href="./images/sprite.svg#icon-twitter "></use>
                                     </svg>
                                 </a>
                             </li>
-                            <li class="social-item">
-                                <a href="" class="social-link">
-                                    <svg class="social-icon">
+                            <li class="social-list__item">
+                                <a href="" class="social-list__link">
+                                    <svg class="social-list__icon">
                                         <use href="./images/sprite.svg#icon-facebook "></use>
                                     </svg>
                                 </a>
                             </li>
-                            <li class="social-item">
-                                <a href="" class="social-link">
-                                    <svg class="social-icon">
+                            <li class="social-list__item">
+                                <a href="" class="social-list__link">
+                                    <svg class="social-list__icon">
                                         <use href="./images/sprite.svg#icon-linkedin"></use>
                                     </svg>
                                 </a>
@@ -211,36 +208,36 @@
                     </div>
                     
                 </li>
-                <li class="masters-item">
+                <li class="masters-list__item master-card">
                     <img src="./images/master-1.jpg" width="370" height="346" alt="Джон Смит">
-                    <div class="masters-item-content">
-                        <h3 class="masters-item-title">Michele Doe</h3>
-                        <p class="masters-item-text">Extreme Barber</p>
-                        <ul class="masters-social-list">
-                            <li class="social-item">
-                                <a href="" class="social-link">
-                                    <svg class="social-icon">
+                    <div class="master-card__content">
+                        <h3 class="master-card__title">Michele Doe</h3>
+                        <p class="master-card__text">Extreme Barber</p>
+                        <ul class="master-card__list social-list">
+                            <li class="social-list__item">
+                                <a href="" class="social-list__link">
+                                    <svg class="social-list__icon">
                                         <use href="./images/sprite.svg#icon-instagram "></use>
                                     </svg>
                                 </a>
                             </li>
-                            <li class="social-item">
-                                <a href="" class="social-link">
-                                    <svg class="social-icon">
+                            <li class="social-list__item">
+                                <a href="" class="social-list__link">
+                                    <svg class="social-list__icon">
                                         <use href="./images/sprite.svg#icon-twitter "></use>
                                     </svg>
                                 </a>
                             </li>
-                            <li class="social-item">
-                                <a href="" class="social-link">
-                                    <svg class="social-icon">
+                            <li class="social-list__item">
+                                <a href="" class="social-list__link">
+                                    <svg class="social-list__icon">
                                         <use href="./images/sprite.svg#icon-facebook "></use>
                                     </svg>
                                 </a>
                             </li>
-                            <li class="social-item">
-                                <a href="" class="social-link">
-                                    <svg class="social-icon">
+                            <li class="social-list__item">
+                                <a href="" class="social-list__link">
+                                    <svg class="social-list__icon">
                                         <use href="./images/sprite.svg#icon-linkedin"></use>
                                     </svg>
                                 </a>
@@ -248,36 +245,36 @@
                         </ul>
                     </div>
                 </li>
-                <li class="masters-item">
+                <li class="masters-list__item master-card">
                     <img src="./images/master-1.jpg" width="370" height="346" alt="Джон Смит">
-                    <div class="masters-item-content">
-                        <h3 class="masters-item-title">Alan Black</h3>
-                        <p class="masters-item-text">Extreme Barber</p>
-                        <ul class="masters-social-list">
-                            <li class="social-item">
-                                <a href="" class="social-link">
-                                    <svg class="social-icon">
+                    <div class="master-card__content">
+                        <h3 class="master-card__title">Alan Black</h3>
+                        <p class="master-card__text">Extreme Barber</p>
+                        <ul class="master-card__list social-list">
+                            <li class="social-list__item">
+                                <a href="" class="social-list__link">
+                                    <svg class="social-list__icon">
                                         <use href="./images/sprite.svg#icon-instagram "></use>
                                     </svg>
                                 </a>
                             </li>
-                            <li class="social-item">
-                                <a href="" class="social-link">
-                                    <svg class="social-icon">
+                            <li class="social-list__item">
+                                <a href="" class="social-list__link">
+                                    <svg class="social-list__icon">
                                         <use href="./images/sprite.svg#icon-twitter "></use>
                                     </svg>
                                 </a>
                             </li>
-                            <li class="social-item">
-                                <a href="" class="social-link">
-                                    <svg class="social-icon">
+                            <li class="social-list__item">
+                                <a href="" class="social-list__link">
+                                    <svg class="social-list__icon">
                                         <use href="./images/sprite.svg#icon-facebook "></use>
                                     </svg>
                                 </a>
                             </li>
-                            <li class="social-item">
-                                <a href="" class="social-link">
-                                    <svg class="social-icon">
+                            <li class="social-list__item">
+                                <a href="" class="social-list__link">
+                                    <svg class="social-list__icon">
                                         <use href="./images/sprite.svg#icon-linkedin"></use>
                                     </svg>
                                 </a>
@@ -357,7 +354,7 @@
         </div>
         
     </footer>
-    <div class="backdrop">
+    <!-- <div class="backdrop">
         <div class="modal">
             <button type="button" class="close-btn">x</button>
             <form action="" method="GET" class="modal-form">
@@ -402,6 +399,6 @@
                 
             </form>
         </div>
-    </div>
+    </div> -->
 </body>
 </html>
