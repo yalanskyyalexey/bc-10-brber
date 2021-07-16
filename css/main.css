@@ -51,6 +51,17 @@ body {
   text-decoration: none;
 }
 
+.social-list__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-list__link {
+  width: 100%;
+  height: 100%;
+}
+
 .container {
   width: 1200px;
   padding-left: 15px;
@@ -105,8 +116,7 @@ body {
   transition: color 300ms linear, background-color 300ms linear;
 }
 
-.btn:hover,
-.btn:focus {
+.btn:hover, .btn:focus {
   background-color: var(--accent-color);
   color: #ffffff;
 }
@@ -141,7 +151,7 @@ body {
   color: var(--pre-title-color);
 }
 
-.suptext_color_gray::before {
+.suptext_color_gray ::before {
   background-color: rgba(157, 164, 189, 0.6);
 }
 
@@ -149,7 +159,7 @@ body {
   color: #303030;
 }
 
-.suptext_color_dark:before {
+.suptext_color_dark::before {
   background-color: #303030;
 }
 
@@ -193,6 +203,7 @@ body {
   font-size: 18px;
   line-height: 1.67;
   letter-spacing: 0.02em;
+  justify-content: space-between;
   color: #9da4bd;
 }
 
@@ -217,14 +228,8 @@ body {
 }
 
 .social-list__link {
-  display: block;
-  width: 100%;
-  height: 100%;
   border-radius: 50%;
   background-color: #ffffff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   transition: background-color 600ms linear;
 }
 
@@ -235,13 +240,13 @@ body {
   transition: fill 200ms linear;
 }
 
-.social-list__link:hover {
-  background-color: teal;
+.social-list__link:hover .social-list__icon,
+.social-list__link:focus .social-list__icon {
+  fill: var(--accent-color);
 }
 
-.social-list__link:hover .social-icon,
-.social-list__link:hover .social-icon {
-  fill: var(--accent-color);
+.social-list__link:hover {
+  background-color: teal;
 }
 
 .header {
@@ -283,8 +288,7 @@ body {
   transition: color 300ms linear;
 }
 
-.menu-list__link:hover,
-.menu-list__link:focus {
+.menu-list__link:hover, .menu-list__link:focus {
   color: var(--accent-color);
 }
 
@@ -299,8 +303,7 @@ body {
   transition: color 300ms linear;
 }
 
-.header-right__phone:hover,
-.header-right__phone:focus {
+.header-right__phone:hover, .header-right__phone:focus {
   color: var(--accent-color);
 }
 
@@ -347,8 +350,7 @@ body {
   color: #303030;
 }
 
-.hero-list__link:hover,
-.hero-list__link:focus {
+.hero-list__link:hover, .hero-list__link:focus {
   color: var(--accent-color);
 }
 
@@ -393,7 +395,7 @@ body {
   margin-right: 64px;
 }
 
-.about-list__item:not(:last-child) {
+.about-list__item :not(:last-child) {
   margin-right: 30px;
 }
 
@@ -408,6 +410,30 @@ body {
 .about-right__text {
   margin-bottom: 40px;
   max-width: 500px;
+}
+
+.prices {
+  background-image: url(../images/price-img.png), linear-gradient(#111319, #111319);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.prices__suptext {
+  margin-bottom: 20px;
+}
+
+.prices__title {
+  margin-bottom: 44px;
+}
+
+.prices__info {
+  margin-bottom: 50px;
+}
+
+.prices-info {
+  display: flex;
+  width: 100%;
 }
 
 .reason.dif-pt {
@@ -508,10 +534,6 @@ body {
   margin-top: 30px;
 }
 
-.master-card:hover .masters-description {
-  transform: translateY(0%);
-}
-
 .master-card__content {
   padding-top: 30px;
 }
@@ -551,5 +573,9 @@ body {
   height: 100%;
   transform: translateY(100%);
   transition: transform 300ms linear;
+}
+
+.master-card:hover .master-card__description {
+  transform: translateY(0%);
 }
 /*# sourceMappingURL=main.css.map */

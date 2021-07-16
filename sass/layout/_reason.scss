@@ -22,18 +22,17 @@
 
 .reason-list__item {
     width: 170px;
-
     padding: 20px;
     background-color: #f7f7f7;
+    &:nth-child(odd) {
+        margin-right: 30px;
+    }
+    &:nth-child(even) {
+        margin-top: 30px;
+    }
 }
 
-.reason-list__item:nth-child(odd) {
-    margin-right: 30px;
-}
 
-.reason-list__item:nth-child(even) {
-    margin-top: 30px;
-}
 
 .reason-list__digit {
     font-weight: 700;

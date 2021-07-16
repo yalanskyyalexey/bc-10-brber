@@ -14,18 +14,19 @@
     border: 1px solid #ff6c00;
     border-radius: 25px;
     transition: color 300ms linear, background-color 300ms linear;
+    &:hover,
+    &:focus {
+        background-color: var(--accent-color);
+        color: #ffffff;
+    }
+    &_color_dark {
+        color: #303030;
+    }
+
+    &_color_white {
+        color: var(--header-text-color);
+    }
 }
 
-.btn:hover,
-.btn:focus {
-    background-color: var(--accent-color);
-    color: #ffffff;
-}
 
-.btn_color_dark {
-    color: #303030;
-}
 
-.btn_color_white {
-    color: var(--header-text-color);
-}

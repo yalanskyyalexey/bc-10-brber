@@ -1,33 +1,32 @@
 .prices-list {
     padding: 30px 40px;
     width: 50%;
+    &_bg_light {
+        background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+    }
+    &_bg_dark {
+        background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
+    }
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        & + & {
+            margin-top: 20px;
+        }
+    }
+
+    
+    &__text {
+        font-size: 18px;
+        line-height: 1.67;
+
+        letter-spacing: 0.02em;
+        justify-content: space-between;
+
+        color: #9da4bd;
+    }
 }
 
-.prices-list_bg_light {
-    background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
-}
-
-.prices-list_bg_dark {
-    background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
-}
-
-.prices-list__item {
-    display: flex;
-    justify-content: space-between;
-}
-
-.prices-list__item + .prices-list__item {
-    margin-top: 20px;
-}
-
-.prices-list__text {
-    font-size: 18px;
-    line-height: 1.67;
-
-    letter-spacing: 0.02em;
-
-    color: #9da4bd;
-}
 
 .prices-btn {
     color: #ffffff;

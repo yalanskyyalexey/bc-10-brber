@@ -6,29 +6,29 @@
     text-transform: uppercase;
     display: flex;
     align-items: center;
+    &::before {
+        content: "";
+        display: block;
+        width: 60px;
+        height: 1px;
+
+        margin-right: 20px;
+    }
 }
 
-.suptext::before {
-    content: "";
-    display: block;
-    width: 60px;
-    height: 1px;
-
-    margin-right: 20px;
-}
 
 .suptext_color_gray {
     color: var(--pre-title-color);
+    ::before {
+        background-color: rgba(157, 164, 189, 0.6);
+    }
 }
 
-.suptext_color_gray::before {
-    background-color: rgba(157, 164, 189, 0.6);
-}
 
 .suptext_color_dark {
     color: #303030;
+    &::before {
+        background-color: #303030;
+    }
 }
 
-.suptext_color_dark:before {
-    background-color: #303030;
-}
