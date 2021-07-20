@@ -1,35 +1,77 @@
 .reason.dif-pt {
-    padding-top: 121px;
+    padding-top: 84px;
+    @media screen and (min-width: 768px) {
+        padding-top: 100px;
+    }
+    @media screen and (min-width: 1200px) {
+        padding-top: 121px;
+    }
 }
 
 .reason .container {
     display: flex;
+    flex-direction: column-reverse;
+    @media screen and (min-width: 1200px) {
+        flex-direction: row;
+    }
 }
 
 .reason-left {
-    width: 50%;
+    // width: 50%;
     flex-shrink: 0;
     display: flex;
     justify-content: center;
+    @media screen and (min-width: 768px) {
+        justify-content: flex-end;
+    }
+    @media screen and (min-width: 1200px) {
+        width: 50%;
+        justify-content: center;
+    }
 }
 
 .reason-list {
     display: flex;
     flex-wrap: wrap;
-    width: 370px;
+    // width: 370px;
     align-items: flex-start;
+    @media screen and (min-width: 768px) {
+        width: 450px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 370px
+    } 
 }
 
 .reason-list__item {
-    width: 170px;
+    
+    width: 100%;
     padding: 20px;
     background-color: #f7f7f7;
+    &:not(:last-child) {
+        margin-bottom: 30px;
+    }
+     @media screen and (min-width: 480px) {
+         &:not(:last-child) {
+        margin-bottom: unset;
+    }
+         width: 193px;
     &:nth-child(odd) {
-        margin-right: 30px;
+            margin-right: 30px;
+        }
+        &:nth-child(even) {
+            margin-top: 30px;
+        }
+     }
+    @media screen and (min-width: 768px) {
+        width: 210px;
     }
-    &:nth-child(even) {
-        margin-top: 30px;
+
+    @media screen and (min-width: 1200px) {
+        width: 170px;
     }
+    
 }
 
 
@@ -53,7 +95,15 @@
 }
 
 .reason-right {
-    padding-left: 15px;
+    // padding-left: 15px;
+    @media screen and (min-width: 768px) {
+        max-width: 500px;
+    }
+
+    @media screen and (min-width: 1200px) {
+       padding-left: 15px;
+    }
+
 }
 
 .reason-right__suptext {
@@ -66,4 +116,5 @@
 
 .reason-right__subtext {
     max-width: 500px;
+    margin-bottom: 44px;
 }

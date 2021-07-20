@@ -1,9 +1,36 @@
 .prices {
-    background-image: url(../images/price-img.png),
+    background-image: url(../images/prises-img-mob.png),
         linear-gradient(#111319, #111319);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    @media screen and (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/prises-img-mob2x.png),
+        linear-gradient(#111319, #111319);
+        
+    }    
+    @media screen and (min-width: 768px) {
+        background-image: url(../images/prises-img-tab.png),
+        linear-gradient(#111319, #111319);
+    }           
+    @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
+         screen and (min-width: 768px) and (min-resolution: 192dpi),
+         screen and (min-width: 768px) and (min-resolution: 2dppx) {
+        background-image: url(../images/prises-img-tab2x.png),
+        linear-gradient(#111319, #111319);        
+    }
+    @media screen and (min-width: 1200px) {
+        background-image: url(../images/price-img.png),
+        linear-gradient(#111319, #111319);
+    }  
+    @media screen and (min-width: 1200px) and  (min-device-pixel-ratio: 2),
+         screen and (min-width: 1200px) and  (min-resolution: 192dpi),
+         screen and (min-width: 1200px) and  (min-resolution: 2dppx) {
+        background-image: url(../images/prises-img2x.png),
+        linear-gradient(#111319, #111319);        
+    }
 }
 .prices__suptext {
     margin-bottom: 20px;
@@ -18,6 +45,33 @@
 }
 
 .prices-info {
-    display: flex;
+    // display: flex;
     width: 100%;
+    background: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%);
+    @media screen and (min-width: 1200px) {
+        background: unset;
+        display: flex;
+    }
+}
+
+.prices-list_top {
+    padding-bottom: 0;
+    .prices-list__item {
+        &:last-child {
+            margin-bottom: 20px;
+            @media screen and (min-width: 1200px) {
+                margin-bottom: unset;
+            }
+        }
+    }
+    @media screen and (min-width: 1200px) {
+        padding-bottom: 30px;
+    }
+}
+
+.prices-list_bottom {
+    padding-top: 0;
+    @media screen and (min-width: 1200px) {
+        padding-top: 30px;
+    }
 }
